@@ -30,144 +30,27 @@ permalink: portfolio/
 				<li data-group="web-design">Web design</li>
 			</ul>
 			<div class="grid-items portfolio-section preload">
-				<article class="item column three" data-groups='["lightbox", "minimal"]'>
-					<figure><img src="http://placehold.it/500x750/ddd/fff&text=Beetle%20image" alt=""></figure>
+				{% for item in site.portfolio %}
+				<article class="item column three" data-groups='{{ item.groups }}'>
+					<figure><img src="{{item.image}}" alt=""></figure>
 					<a class="overlay" href="#">
 						<div class="overlay-content">
-							<div class="post-type"><i class="icon icon-video"></i></div>
+							<div class="post-type"><i class="icon {{ item.icon }}"></i></div>
 							<h2>Telephone love</h2>
 							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div><!-- overlay-content -->
 					</a><!-- overlay -->
 				</article>
-				<article class="item column three" data-groups='["fun", "icons"]'>
-					<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-					<a class="overlay" href="#">
-						<div class="overlay-content">
-							<div class="post-type"><i class="icon icon-picture"></i></div>
-							<h2>To resolve 2014</h2>
-							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div><!-- overlay-content -->
-					</a><!-- overlay -->
-				</article>
-				<article class="item column three" data-groups='["icons"]'>
-					<figure><img src="http://placehold.it/600x800/ddd/fff&text=Beetle%20image" alt=""></figure>
-					<a class="overlay" href="#">
-						<div class="overlay-content">
-							<div class="post-type"><i class="icon icon-video"></i></div>
-							<h2>The Essentials</h2>
-							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div><!-- overlay-content -->
-					</a><!-- overlay -->
-				</article>
-				<article class="item column three" data-groups='["web-design", "minimal"]'>
-					<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-					<a class="overlay" href="#">
-						<div class="overlay-content">
-							<div class="post-type"><i class="icon icon-news"></i></div>
-							<h2>All of the Lights</h2>
-							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div><!-- overlay-content -->
-					</a><!-- overlay -->
-				</article>
-				<article class="item column three" data-groups='["advertising", "lightbox", "web-design"]'>
-					<figure><img src="http://placehold.it/700x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-					<a class="overlay" href="#">
-						<div class="overlay-content">
-							<div class="post-type"><i class="icon icon-video"></i></div>
-							<h2>Wired UK</h2>
-							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div><!-- overlay-content -->
-					</a><!-- overlay -->
-				</article>
-				<article class="item column three" data-groups='["advertising", "infographics"]'>
-					<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-					<a class="overlay" href="#">
-						<div class="overlay-content">
-							<div class="post-type"><i class="icon icon-camera"></i></div>
-							<h2>Music</h2>
-							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div><!-- overlay-content -->
-					</a><!-- overlay -->
-				</article>
-				<article class="item column three" data-groups='["infographics", "web-design"]'>
-					<figure><img src="http://placehold.it/600x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-					<a class="overlay" href="#">
-						<div class="overlay-content">
-							<div class="post-type"><i class="icon icon-picture"></i></div>
-							<h2>India</h2>
-							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div><!-- overlay-content -->
-					</a><!-- overlay -->
-				</article>
-				<article class="item column three" data-groups='["fun", "icons"]'>
-					<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-					<a class="overlay" href="#">
-						<div class="overlay-content">
-							<div class="post-type"><i class="icon icon-news"></i></div>
-							<h2>Love &amp; Mercy</h2>
-							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div><!-- overlay-content -->
-					</a><!-- overlay -->
-				</article>
-				<article class="item column three" data-groups='["advertising", "fun"]'>
-					<figure><img src="http://placehold.it/500x800/ddd/fff&text=Beetle%20image" alt=""></figure>
-					<a class="overlay" href="#">
-						<div class="overlay-content">
-							<div class="post-type"><i class="icon icon-speaker-on"></i></div>
-							<h2>Coffe love</h2>
-							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div><!-- overlay-content -->
-					</a><!-- overlay -->
-				</article>
-				<article class="item column three" data-groups='["fun", "icons"]'>
-					<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-					<a class="overlay" href="#">
-						<div class="overlay-content">
-							<div class="post-type"><i class="icon icon-picture"></i></div>
-							<h2>The City</h2>
-							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div><!-- overlay-content -->
-					</a><!-- overlay -->
-				</article>
-				<article class="item column three" data-groups='["fun", "advertising"]'>
-					<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-					<a class="overlay" href="#">
-						<div class="overlay-content">
-							<div class="post-type"><i class="icon icon-camera"></i></div>
-							<h2>Creative Lab</h2>
-							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div><!-- overlay-content -->
-					</a><!-- overlay -->
-				</article>
-				<article class="item column three" data-groups='["fun", "infographics"]'>
-					<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-					<a class="overlay" href="#">
-						<div class="overlay-content">
-							<div class="post-type"><i class="icon icon-news"></i></div>
-							<h2>Summer camp</h2>
-							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div><!-- overlay-content -->
-					</a><!-- overlay -->
-				</article>
-				<article class="item column three" data-groups='["fun"]'>
-					<figure><img src="http://placehold.it/800x460/ddd/fff&text=Beetle%20image" alt=""></figure>
-					<a class="overlay" href="#">
-						<div class="overlay-content">
-							<div class="post-type"><i class="icon icon-news"></i></div>
-							<h2>Weapon</h2>
-							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div><!-- overlay-content -->
-					</a><!-- overlay -->
-				</article>
+				{% endfor %}
+
 				<div class="shuffle-sizer three"></div>
 			</div><!-- grid-items -->
-			<div id="pagination">
+<!-- 			<div id="pagination">
 				<ul class="clear-after reset plain">
 					<li id="older" class="pagination-nav"><a href="#" class="button transparent aqua"><i class="fa fa-chevron-left"></i><span class="label">Older</span></a></li>
 					<li id="newer" class="pagination-nav"><a href="#" class="button transparent aqua"><span class="label">Newer</span><i class="fa fa-chevron-right"></i></a></li>
 				</ul>
-			</div>
+			</div> -->
 		</div><!-- row-content -->
 	</div><!-- row -->
 </main><!-- main -->

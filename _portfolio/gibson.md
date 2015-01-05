@@ -1,10 +1,12 @@
 ---
 layout: portfolio-item
-permalink: portfolio/affordably/
-project: "Affordably"
-client: "Ourselves"
-role: "Full Stack Web-Engineer"
+project: "Gibson Consulting"
+client: "Gibson Consulting"
+role: "Front End Developer"
 included: "Web design and development"
+image: "../images/gibson.png"
+icon: icon-desktop
+groups: '["minimal", "icons"]'
 ---
 
 

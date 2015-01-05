@@ -13,9 +13,9 @@
           <li class="menu-item">
             <a href="{{ site.data.routes.portfolio }}">Works</a>
             <ul class="sub-menu">
-              <li><a href="{{ site.data.routes.affordably }}">Affordably</a></li>
-              <li><a href="{{ site.data.routes.affordably }}">Iso Pods</a></li>
-              <li><a href="{{ site.data.routes.affordably }}">Gibson Consulting</a></li>
+              {% for item in site.portfolio %}
+                <li><a href="{{ item.url }}">{{ item.project }}</a></li>
+              {% endfor %}
             </ul>
           </li>
           <li class="menu-item">
