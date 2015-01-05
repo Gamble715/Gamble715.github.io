@@ -1,0 +1,71 @@
+<footer role="contentinfo">
+  <div class="row">
+    <div class="row-content buffer clear-after">
+      <section id="top-footer">
+        <div class="widget column three"><!-- la class="widget" è forse generata utomaticamente da wp -->
+          <h4>Menu</h4>
+          <ul class="plain">
+            <li><a href="/">Home</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/resume">Resume</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="widget column three">
+          <h4>Archives</h4>
+          <ul class="plain">
+            <li><a href="#">March 2014</a></li>
+            <li><a href="#">April 2014</a></li>
+            <li><a href="#">May 2014</a></li>
+            <li><a href="#">June 2014</a></li>
+            <li><a href="#">July 2014</a></li>
+          </ul>
+        </div>
+        <div class="widget column three">
+          <h4>Fun Fact</h4>
+          <div class="side-mockup center-mockup animation">
+            <div class="slider" data-autoplay="3000">
+              <figure>
+                <div style="padding: 0px;">I had to juggle at least 6 times to graduate 8th grade.</div>
+                <div style="padding: 0px;">I juggled 36 times.</div>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="widget meta-social column three">
+          <h4>Follow Us</h4>
+          <ul class="inline">
+            <li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
+            <li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
+            <li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
+          </ul>
+        </div>
+      </section><!-- top-footer -->
+      <section id="bottom-footer">
+        <p class="keep-left">&copy; 2014 <a href="http://mokaine.com/" alt="Mokaine Lab">Mokaine</a>. All Rights Reserved.</p>
+        <p class="keep-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </section><!-- bottom-footer -->
+    </div><!-- row-content -->
+  </div><!-- row -->
+</footer>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="{{ "js/plugins.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "js/beetle.js " | prepend: site.baseurl }}"></script>
+<script>
+$(document).ready(function(){
+  $('#send').click(function(){
+    $(this).val('Sending ...');
+    $('#success p').remove();
+    $.post('https://formkeep.com/f/dd2b6c0c1f02', $('#contact-form').serialize(), function(response) {
+      // $('#success').html(response);
+      $('#success').hide('slow');
+      $('#send').val('Send a Message');
+      $('#send').append('Your message has been sent!');
+    });
+    return false;
+  });
+});
+</script>
