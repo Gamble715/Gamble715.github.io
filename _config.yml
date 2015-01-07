@@ -16,3 +16,5 @@ markdown: kramdown
 collections:
   portfolio:
     output: true
+  employment:
+    output: true

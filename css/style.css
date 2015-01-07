@@ -799,6 +799,13 @@ nav ul.sub-menu > li:last-child > a {
     margin-left: 0.667em;
 }
 
+.port {
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+}
+
 .blog h5,
 .blog-section h5,
 .single h5,
@@ -1852,7 +1859,7 @@ section.greyish {
 
 .timeline .experience-info h5 {
     margin-top: 0;
-    margin-bottom: 0.333em;
+    margin-bottom: 0.2em;
     font-size: 1em;
 }
 
@@ -1864,6 +1871,7 @@ section.greyish {
 .timeline .experience-info p {
     color: #999;
     font-size: 0.722em;
+    margin-top: .2em;
 }
 
 .timeline time {

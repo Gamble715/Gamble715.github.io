@@ -33,7 +33,7 @@ permalink: portfolio/
 				{% for item in site.portfolio %}
 				<article class="item column three" data-groups='{{ item.groups }}'>
 					<figure><img src="{{item.image}}" alt=""></figure>
-					<a class="overlay" href="#">
+					<a class="overlay" href="{{ item.url }}">
 						<div class="overlay-content">
 							<div class="post-type"><i class="icon {{ item.icon }}"></i></div>
 							<h2>Telephone love</h2>
