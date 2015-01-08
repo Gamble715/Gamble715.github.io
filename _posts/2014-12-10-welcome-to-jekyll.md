@@ -5,8 +5,8 @@ subtitle: "My journey from there to here"
 date:   2014-12-10 14:26:14
 categories: jekyll update
 image: "../../images/world.jpeg"
-permalink: "/blog/first-post"
-categories: ["Travels", "World"]
+permalink: "/blog/a-whole-new-world"
+tags: ["Travels", "World"]
 ---
 
 

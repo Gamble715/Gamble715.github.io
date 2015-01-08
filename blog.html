@@ -26,8 +26,8 @@ permalink: blog/
 					<div class="column nine last">
 						<h2><a href="#">{{post.title}}</a></h2>
 						<h5 class="meta-post">
-							{% for category in post.categories %}
-								{% if category == post.categories.last %}
+							{% for category in post.tags %}
+								{% if category == post.tags.last %}
 									<a href="#">{{category | capitalize}}</a>
 								{% else %}
 									<a href="#">{{category | capitalize}},</a>

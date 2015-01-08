@@ -5,6 +5,10 @@ layout: default
 {% for tag in page.tags %}
     {% capture tagStr %}{{ tagStr }},{{ tag }}{% endcapture %}
 {% endfor %}
+{% capture url %}{{ site.url }}{{ page.url }}{% endcapture %}
+{% if page.shortUrl != null %}
+    {% assign url = page.shortUrl %}
+{% endif %}
 <main role="main" class="single single-post">
 			<div id="intro-wrap">
 				<div id="intro" class="preload darken">
@@ -30,8 +34,8 @@ layout: default
 					<div class="post-area clear-after">
 						<article role="main">
 							<h5 class="meta-post">
-							{% for category in page.categories %}
-								{% if category == page.categories.last %}
+							{% for category in page.tags %}
+								{% if category == page.tags.last %}
 									<a href="#">{{category | capitalize}}</a>
 								{% else %}
 									<a href="#">{{category | capitalize}},</a>
@@ -45,9 +49,8 @@ layout: default
 
 					<div class="meta-social">
 						<ul class="inline center">
-							<li><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url }}&via=MisplacedYankee" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
-							<li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-							<li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ url }}&via=MisplacedYankee&hashtags={{ tagStr }}" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
+							<li><a href="https://www.facebook.com/sharer/sharer.php?t={{ page.title }}&u={{ url }}" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
 						</ul>
 					</div>
 
