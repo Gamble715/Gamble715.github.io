@@ -2,19 +2,23 @@
   role: "Full-stack Web Developer"
   length: "November 2014 - January 2015"
   year: 2014
+  image: "../images/image.png"
   location: "Austin, TX"
 - employer: "Guava"
   role: "Full-stack Web Developer"
   length: "February 2014 - November 2014"
   year: 2014
+  image: "../images/guava-logo.png"
   location: "Austin, TX"
 - employer: "MakerSquare"
   role: "Fellow Instructor"
   length: "November 2013 - February 2014"
   year: 2013
+  image: "../images/MKS.png"
   location: "Austin, TX"
 - employer: "Whole Foods Market"
   role: "Customer Service Team Member"
   length: "September 2012 - September 2011"
   year: 2012
+  image: "../images/WFM.png"
   location: "Columbia, SC"

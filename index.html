@@ -46,28 +46,34 @@ layout: default
     <section class="row section call-to-action">
       <div class="row-content buffer even">
         <p>Would you like me to help you make things?</p>
-        <a class="button red" href="#">Contact me now!</a>
+        <a class="button red" href="{{ site.data.routes.contact }}">Contact me now!</a>
       </div>
     </section>
 
     <section class="row section">
       <div class="row-content buffer even clear-after">
         <div class="column four">
-          <div class="small-icon red"><i class="icon icon-diamond"></i></div>
+          <a href="{{ site.data.routes.portfolio}}">
+            <div class="small-icon red"><i class="icon icon-diamond"></i></div>
+          </a>
           <div class="small-icon-text clear-after">
             <h4>Portfolio</h4>
             <p class="text-xs">This is a collection of the things I have made. It will always be a work in progress.</p>
           </div>
         </div>
         <div class="column four">
-          <div class="small-icon red"><i class="icon icon-crown"></i></div>
+          <a href="{{ site.data.routes.resume}}">
+            <div class="small-icon red"><i class="icon icon-crown"></i></div>
+          </a>
           <div class="small-icon-text clear-after">
             <h4>Resume</h4>
             <p class="text-xs">Here you can find my proudest accomplishments, but the best is yet to come.</p>
           </div>
         </div>
         <div class="column four last">
-          <div class="small-icon red"><i class="icon icon-megaphone"></i></div>
+          <a href="{{ site.data.routes.blog }}">
+            <div class="small-icon red"><i class="icon icon-megaphone"></i></div>
+          </a>
           <div class="small-icon-text clear-after">
             <h4>Blog</h4>
             <p class="text-xs">In case you were wondering what I have to say, or if you want to make sure I am not/am crazy.</p>
@@ -181,7 +187,7 @@ layout: default
     <section class="row section call-to-action">
       <div class="row-content buffer even animation">
         <p>Would you like to work with me?</p>
-        <a class="button red" href="#">Let me know!</a>
+        <a class="button red" href="{{ site.data.routes.contact }}">Let me know!</a>
       </div>
     </section>
 
