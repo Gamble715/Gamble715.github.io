@@ -6,6 +6,7 @@ date:   2014-12-10 14:26:14
 categories: jekyll update
 image: "../../images/world.jpeg"
 permalink: "/blog/a-whole-new-world"
+shortUrl: "http://bit.ly/1xVMGAr"
 tags: ["Travels", "World"]
 ---
 
