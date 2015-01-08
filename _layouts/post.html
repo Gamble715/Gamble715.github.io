@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+{% assign tagStr = '' %}
+{% for tag in page.tags %}
+    {% capture tagStr %}{{ tagStr }},{{ tag }}{% endcapture %}
+{% endfor %}
 <main role="main" class="single single-post">
 			<div id="intro-wrap">
 				<div id="intro" class="preload darken">
@@ -41,7 +45,7 @@ layout: default
 
 					<div class="meta-social">
 						<ul class="inline center">
-							<li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
+							<li><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url }}&via=MisplacedYankee" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
 							<li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
 							<li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
 						</ul>
