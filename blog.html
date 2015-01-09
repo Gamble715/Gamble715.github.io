@@ -33,25 +33,25 @@ permalink: blog/
 									<a href="#">{{category | capitalize}},</a>
 								{% endif %}
 							{% endfor %}
-							- <time datetime="2013-11-10">10 November 2013</time></h5>
+							- <time datetime="{{post.date}}">{{post.date | date: "%B %d %Y"}}</time></h5>
 						{{post.excerpt}}
 					</div><!-- column nine -->
 				</article>
 				{% endfor %}
-				<div id="pagination">
+				<!-- <div id="pagination">
 					<ul class="clear-after reset plain">
 						<li id="older" class="pagination-nav"><a href="#" class="button transparent aqua"><i class="fa fa-chevron-left"></i><span class="label">Older</span></a></li>
 						<li id="newer" class="pagination-nav"><a href="#" class="button transparent aqua"><span class="label">Newer</span><i class="fa fa-chevron-right"></i></a></li>
 					</ul>
-				</div>
+				</div> -->
 			</div><!-- column nine -->
 			<aside role="complementary" class="sidebar column three last">
-				<div class="widget widget_search">
+<!-- 				<div class="widget widget_search">
 					<form role="search">
 						<span class="pre-input"><i class="icon icon-search"></i></span>
 						<input type="text" placeholder="Search..." value="" class="plain buffer">
 					</form>
-				</div>
+				</div> -->
 				<div class="widget">
 					<h4>About the Blog</h4>
 					<div class="textwidget">
