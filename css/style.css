@@ -370,7 +370,7 @@ nav {
     display: inline-block;
     float: right;
     clear: none;
-    width: 500px !important;
+    width: 48.42% !important;
 }
 
 #brand a,
@@ -797,6 +797,14 @@ nav ul.sub-menu > li:last-child > a {
 #pagination #newer .button i {
     margin-right: 0;
     margin-left: 0.667em;
+}
+
+.blog-image {
+    height: 150px;
+}
+
+.groups:hover {
+    color: #FD685B;
 }
 
 .port {

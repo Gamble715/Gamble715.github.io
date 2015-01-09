@@ -6,7 +6,7 @@ role: "Full Stack Web-Engineer"
 included: "Web design and development"
 image: "../images/affordably.png"
 icon: icon-desktop
-groups: '["fun", "icons"]'
+groups: '["web-development", "user-interface"]'
 ---
 
 

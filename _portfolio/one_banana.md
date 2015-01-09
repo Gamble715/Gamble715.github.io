@@ -6,7 +6,7 @@ role: "Front End Developer"
 included: "Web design and development"
 image: "../images/one_banana.png"
 icon: icon-desktop
-groups: '["minimal", "icons"]'
+groups: '["marketing-site"]'
 ---
 
 
