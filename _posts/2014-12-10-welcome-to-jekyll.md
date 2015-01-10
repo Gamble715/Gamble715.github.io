@@ -2,7 +2,7 @@
 layout: post
 title:  "A Whole New World"
 subtitle: "My journey from there to here"
-date:   2015-01-09
+date:   2015-01-10
 categories: jekyll update
 image: "../../images/world.jpeg"
 permalink: "/blog/a-whole-new-world"

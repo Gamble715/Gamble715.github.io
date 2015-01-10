@@ -26,14 +26,14 @@ layout: default
 					<div class="post-area clear-after">
 						<article role="main">
 							<h5 class="meta-post">
-							{% for category in page.tags %}
+							{% for category in page.groups %}
 								{% if category == page.tags.last %}
 									<a href="#">{{category | capitalize}}</a>
 								{% else %}
 									<a href="#">{{category | capitalize}},</a>
 								{% endif %}
 							{% endfor %}
-							 - <time datetime="2013-11-09">November 9, 2013</time></h5>
+							<time datetime="{{page.date}}">{{page.date | date: "%B %d, %Y"}}</time></h5>
 							{{content}}
 						</article>
 

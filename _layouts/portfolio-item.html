@@ -14,15 +14,23 @@ layout: default
 		<div class="row-content buffer-left buffer-right buffer-bottom clear-after">
 			<div id="post-nav">
 				<ul class="clear-after reset plain">
-					<li id="prev-items" class="post-nav"><a href="#"><i class="fa fa-chevron-left"></i><span class="label hidden-mobile">Prev</span></a></li>
+					<li id="prev-items" class="post-nav"><a href="{{ previous_page_path }}"><i class="fa fa-chevron-left"></i><span class="label hidden-mobile">Prev</span></a></li>
 					<li id="all-items" class="post-nav"><a href="#"><i class="icon icon-images"></i></a></li>
-					<li id="next-items" class="post-nav"><a href="#"><span class="label hidden-mobile">Next</span><i class="fa fa-chevron-right"></i></a></li>
+					<li id="next-items" class="post-nav"><a href="{{ next_page_path }}"><span class="label hidden-mobile">Next</span><i class="fa fa-chevron-right"></i></a></li>
 				</ul>
 			</div>
 
 			<div class="post-area clear-after">
 				<article role="main" class="column nine">
-					<h5 class="meta-post"><a href="#">Design</a>, <a href="#">Appareal</a></h5>
+					<h5 class="meta-post">
+						{% for category in page.groups %}
+							{% if category == page.groups.last and category != "all" %}
+								<a href="#">{{category | capitalize}}</a>
+							{% elsif category != "all" %}
+								<a href="#">{{category | capitalize}},</a>
+							{% endif %}
+						{% endfor %}
+					</h5>
 					<h1>{{ page.project }}</h1>
 					{{content}}
 				</article>
@@ -43,7 +51,7 @@ layout: default
 					<div class="widget">
 						<h4>External Links</h4>
 						<p>Don't forget to check out the demo!</p>
-						<a href="http://www.affordably.me/demo#/daily" class="button transparent" target="_blank">View Project</a>
+						<a href="{{page.site}}" class="button transparent" target="_blank">View Project</a>
 					</div>
 				</aside>
 

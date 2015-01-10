@@ -5,51 +5,32 @@ client: "Gibson Consulting"
 role: "Front End Developer"
 included: "Web design and development"
 image: "../images/gibson.png"
+site: "http://justincrites.wpengine.com/"
 icon: icon-desktop
-groups: '["marketing-site", "all"]'
+groups: ["all", "marketing-site"]
 ---
 
 
-Lorem markdownum primusque noscit sagittas ipsa aurum, ille non **duruerant**
-silvas inde metuunt verba ipse turbantes. Herbas *caeleste siccare verumque*,
-Milete me potentior corpore certae praemia: omnes volumine plusque. Alis est
-mihi vivusque et pereant visum Aeoliique quod, viva latura somni non levibus
-siqua, et.
+Affordably was an app by the second startup I worked for, Guava. It's main goal was to take in the user's financial data and analyze it to figure out both fixed and discretionary exenditures. From there the app uses the user's monthly saving goal to compute a daily spending plan. If the user spent under this daily budget, the next day it would recompute and show that they could spend more if they wanted and still make their goals. Likewise, if they overspent then the budget would correct down ensuring the user can still reach his or her monthly goal.
 
-Sola stellamque [veluti](http://textfromdog.tumblr.com/)! Et gravi quique
-patriaeque interea. Coniectum traxit insibilat onerosior saepe pars ne infelix
-centum Coeranon novique inplacataeque adnuit movit pulvereamque notas! Nubes
-quam pande deos *pars citra ad* quaerit nova [erat cepimus
-horrendae](http://twitter.com/search?q=haskell) ebrietas, pro neque. Te
-diversaque oris effice extulit verboque curvarique quod; vasto obstarique parvo
-ex ille nec.
+When I arrived at Guava there was a considerable ammount of the app already finished. I was tasked with helping clean it up and conduct customer development to find new features that would be valuable to users. After many customers noted the clunky UI I took it upon myself to upgrade the piecemeal JQuery into an AngularJS powered single page application. I also spearheaded the mobile development by self teaching the Famous mobile framework an creating one code base for what would be our Android and iOS apps.
 
-## Qui vires accipite undis adspicio populorum nativum
+This was a great experience because I wore many hats and operated in all aspects of the startup. In the end it unfortunately failed but it was an experience I would never trade in because I learned many important lessons.
 
-Tergo adultera pudici tecta, quid mortale, altera discordibus vates
-harundinibus? Celmi desit non: locus saecula potentia mulcere.
+## Lessons Learned
 
-> Nec quoque famae cum exhalat scitusque tergo: pressum cum et refovet
-> **matris**. *Veniet ille* Odrysius summa restitit utinam hastae mandataque
-> tempusque structis Semiramis fecistis guttae Hylonome tumulum nec pedibus
-> crescente quoque. Excute Licha et vicisse referitur de abit et aequora fatale
-> dolorem sustinet, nec sed videndum potita passa. Veni dextera, ira ora,
-> Aesonides properas leti servatoremque quid adspicit, gente.
+1. #### Modularize as much code as possible from the get go.
+- When I came in, most of the app's logic was in one giant library file, this made it difficult, even painful, at times when a bug would surface and we would have to sift through 2,000 lines of code to find it. Eventually we worked on breaking it up into separate methods and then separate files making it much easier to debug.
+2. #### Know what to test and what to let slide.
+- In a perfect world there would be 100% test coverage, there would also be enough time to write perfect code and find rediculously snug product-market fit. We all know these are not possible because of tradeoffs. The best we can do is be aware of these tradeoffs and use our judgement on what absolutely needs to be tested to ensure a high quality product and what can be overlooked to ensure an agile development cycle.
+3. #### Dont rely on others to create mission critical value.
+- A startup should have the main goal of creating enough value to sustain a healthy amount of growth. Depending on how aggressive you are, "healthy" can mean many different things but the main contingent is that you as the business owner are in control. We relied too heavily on a partner at the end of our startups life and it ended up costing us because we were no longer in control of our destiny.
 
-## Poteratque quod tulit vulnus vulnera ut inquit
+## Technologies Used
 
-Iunctissima plumas auxilium, inde soceri erat, et haeret, amor iaculum venti
-certamine. Praetendat bulla thalamoque mutua induiturque sedens, Eurydicenque
-grave Auroram et profundo abripit qui! **Valles** sententia *vidisse* iubete.
-
-1. Pectore erat
-2. E bracchia non spargit
-3. Si partem
-4. Retinacula aliquis remittis
-5. Tenues latum satis prudens armos dempsisse crimina
-6. Natae quod dixit pecudesque
-
-Obvia hic confidit, superatus exit. Aut undas fidae iuvenum praebetque anilia,
-di circum vincere in figuras patriis exigua narretque rastra. Nec motu
-conveniant ostendens formosus modus Pirenida, imagine an quam, nescitve; sub
-leti bracchia [plena](http://example.com/).
+- #### Ruby on Rails
+- #### AngularJS
+- #### Famous (for the mobile app)
+- #### Plaid and Intuit APIs (to pull in financial data)
+	- [Justin Crites](https://github.com/j4ustin) and I also wrote the first iteration of the [Plaid Ruby Gem](https://github.com/plaid/plaid-ruby).
+- #### Postgres
