@@ -7,30 +7,28 @@ included: "Web design and development"
 image: "../images/gibson.png"
 site: "http://justincrites.wpengine.com/"
 icon: icon-desktop
-groups: ["all", "marketing-site"]
+groups: '["all", "marketing-site"]'
+tags: ["all", "marketing-site"]
 ---
 
 
-Affordably was an app by the second startup I worked for, Guava. It's main goal was to take in the user's financial data and analyze it to figure out both fixed and discretionary exenditures. From there the app uses the user's monthly saving goal to compute a daily spending plan. If the user spent under this daily budget, the next day it would recompute and show that they could spend more if they wanted and still make their goals. Likewise, if they overspent then the budget would correct down ensuring the user can still reach his or her monthly goal.
+I was contracted to help a consulting agency update their marketing site. Unfortunately things did not work out in the end but the work I did still taught me valuable lessons. I am a big believer that if you cant talk about your failures as well as your successes, you are doomed to repeat your mistakes.
 
-When I arrived at Guava there was a considerable ammount of the app already finished. I was tasked with helping clean it up and conduct customer development to find new features that would be valuable to users. After many customers noted the clunky UI I took it upon myself to upgrade the piecemeal JQuery into an AngularJS powered single page application. I also spearheaded the mobile development by self teaching the Famous mobile framework an creating one code base for what would be our Android and iOS apps.
+I was working alongside [Justin Crites](https://github.com/j4ustin) on this project. He scoped the project out and gave the client a selection of designs to choose from. From those designs the client piecemealed together their preferred composition. From that point on I was tasked in putting the components together and hand coding the custon components such as the CMS hooks and some of the more complicated JavaScript UI.
 
-This was a great experience because I wore many hats and operated in all aspects of the startup. In the end it unfortunately failed but it was an experience I would never trade in because I learned many important lessons.
+Due to the slow nature in which we were paid and recieved feedback Justin decided to drop the client and I never got a chance to fully complete the project. Even though ot ended poorly I still learned a lot about how to work with CMS sites.
 
 ## Lessons Learned
 
-1. #### Modularize as much code as possible from the get go.
-- When I came in, most of the app's logic was in one giant library file, this made it difficult, even painful, at times when a bug would surface and we would have to sift through 2,000 lines of code to find it. Eventually we worked on breaking it up into separate methods and then separate files making it much easier to debug.
-2. #### Know what to test and what to let slide.
-- In a perfect world there would be 100% test coverage, there would also be enough time to write perfect code and find rediculously snug product-market fit. We all know these are not possible because of tradeoffs. The best we can do is be aware of these tradeoffs and use our judgement on what absolutely needs to be tested to ensure a high quality product and what can be overlooked to ensure an agile development cycle.
-3. #### Dont rely on others to create mission critical value.
-- A startup should have the main goal of creating enough value to sustain a healthy amount of growth. Depending on how aggressive you are, "healthy" can mean many different things but the main contingent is that you as the business owner are in control. We relied too heavily on a partner at the end of our startups life and it ended up costing us because we were no longer in control of our destiny.
+1. #### Get on the same page early and often with clients.
+- Justin taught me the importance of accurate scoping, but I realized that over the course of the project the scope changed. We tried to keep up with how much it changed but the turnaround time for feedback became too sluggish and the project eventually fell to a standstill. In the future I now know that I must touch base as often as needed even if it means emailing a client every day until I get a response.
+2. #### Refactor as soon as a module is working.
+- Technical debt becomes more and more expensive the longer it is kept around. Refactoring is most useful right after you get the code to work. At the beginning of this project I was used to refactoring after I finish the file, I soon found that this created inefficiencies in my workflow. When I went back to refactor, even just an hour removed from the code, it was more difficult to infer the essential purpose and thus use the proper design pattern.
+3. #### The sooner your live server is set up the better.
+- The client may well think you haven't done anything if you can't show your work halfway into the job. Getting a live example up and running will ensure this problem never arises. Always be in a position to show your work, no matter the state it is in.
 
 ## Technologies Used
 
-- #### Ruby on Rails
-- #### AngularJS
-- #### Famous (for the mobile app)
-- #### Plaid and Intuit APIs (to pull in financial data)
-	- [Justin Crites](https://github.com/j4ustin) and I also wrote the first iteration of the [Plaid Ruby Gem](https://github.com/plaid/plaid-ruby).
-- #### Postgres
+- #### Wordpress
+- #### JQuery
+- #### WP Engine

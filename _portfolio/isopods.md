@@ -1,13 +1,14 @@
 ---
 layout: portfolio-item
-project: "One Banana"
-client: "One Banana"
-role: "Front End Developer"
-included: "Web design and development"
-image: "../images/one_banana.png"
-site: "http://pulsarlabs.herokuapp.com/one-bananas"
-icon: icon-desktop
-groups: ["all", "marketing-site"]
+project: "IsoPods"
+client: "IsoPods"
+role: "Mobile Developer"
+included: "Mobile development"
+image: "../images/isopods.png"
+site: "https://github.com/Gamble715/SlotMachine"
+icon: icon-tablet
+groups: '["all", "mobile"]'
+tags: ["all", "mobile"]
 ---
 
 

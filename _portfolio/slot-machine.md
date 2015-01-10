@@ -1,15 +1,16 @@
 ---
 layout: portfolio-item
-project: "Affordably"
-client: "Ourselves"
-role: "Full Stack Web-Engineer"
-included: "Web design and development"
-image: "../images/affordably.png"
-site: "http://www.affordably.me/demo#/daily"
-icon: icon-desktop
-groups: '["all", "web-development", "user-interface"]'
-tags: ["all", "web-development", "user-interface"]
+project: "Slot Machine"
+client: "Myself"
+role: "Mobile Developer"
+included: "Mobile development"
+image: "../images/slot_machine.png"
+site: "https://github.com/Gamble715/SlotMachine"
+icon: icon-smartphone
+groups: '["all", "mobile"]'
+tags: ["all", "mobile"]
 ---
+
 
 Affordably was an app by the second startup I worked for, Guava. It's main goal was to take in the user's financial data and analyze it to figure out both fixed and discretionary exenditures. From there the app uses the user's monthly saving goal to compute a daily spending plan. If the user spent under this daily budget, the next day it would recompute and show that they could spend more if they wanted and still make their goals. Likewise, if they overspent then the budget would correct down ensuring the user can still reach his or her monthly goal.
 

@@ -23,8 +23,8 @@ layout: default
 			<div class="post-area clear-after">
 				<article role="main" class="column nine">
 					<h5 class="meta-post">
-						{% for category in page.groups %}
-							{% if category == page.groups.last and category != "all" %}
+						{% for category in page.tags %}
+							{% if category == page.tags.last and category != "all" %}
 								<a href="#">{{category | capitalize}}</a>
 							{% elsif category != "all" %}
 								<a href="#">{{category | capitalize}},</a>
