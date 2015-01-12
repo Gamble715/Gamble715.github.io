@@ -621,8 +621,8 @@ jQuery(document).ready(function ($) {
         var $this = $('.dribbble-items');
         $this.find('.item:nth-of-type(4n)').addClass('last');
         $this.removeClass('preload');
-        $this.children('.landing-els').remove(); 
-        centerOverlay();           
+        $this.children('.landing-els').remove();
+        centerOverlay();
 
     };
 
@@ -638,9 +638,9 @@ jQuery(document).ready(function ($) {
 
         $(window).load(function() {
 
-            centerOverlay(); 
+            centerOverlay();
 
-        });        
+        });
 
     }
 
@@ -1942,7 +1942,7 @@ jQuery(document).ready(function ($) {
             var infowindow = new google.maps.InfoWindow({
                 content: contentString
             });
-            
+
             google.maps.event.addListener(marker, 'click', function() {
                 infowindow.open(map,marker);
             });
@@ -2036,6 +2036,17 @@ jQuery(document).ready(function ($) {
         players: ['www.youtube.com', 'player.vimeo.com']
     });
 
+    var active = false;
 
+    $(".group").click(function() {
+        active = !active;
+        if (active === true) {
+            this.style.setProperty( 'color', '#fff', 'important' );
+            $(this).css("background-color", "rgba(85,193,231,1)");
+        } else {
+            $(this).removeAttr('style');
+            $(this).css("background-color", "");
+        }
+    });
 
 });

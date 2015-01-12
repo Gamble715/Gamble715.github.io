@@ -803,10 +803,6 @@ nav ul.sub-menu > li:last-child > a {
     height: 150px;
 }
 
-.groups:hover {
-    color: #FD685B;
-}
-
 .port {
     -webkit-background-size: auto;
     -moz-background-size: auto;
