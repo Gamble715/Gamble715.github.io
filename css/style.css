@@ -560,10 +560,29 @@ nav ul.sub-menu > li:last-child > a {
     width: inherit;
     height: inherit;
     background-position: center center;
+}
+
+.single #intro .intro-item {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#intro::after {
+  content: "";
+  background: url(../images/seamless_paper_texture.png);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: repeat;
 }
 
 #intro.preload .intro-item {
@@ -2858,6 +2877,19 @@ footer {
     z-index: 10;
     background-color: #363842;
     color: #545766;
+}
+
+footer::after {
+  content: "";
+  background: url(../images/footer_lodyas.png);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: repeat;
 }
 
 footer h1,
