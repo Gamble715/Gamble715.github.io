@@ -26,15 +26,20 @@ layout: default
 					<div class="post-area clear-after">
 						<article role="main">
 							<h5 class="meta-post">
-							{% for category in page.groups %}
-								{% if category == page.tags.last %}
-									<a href="#">{{category | capitalize}}</a>
-								{% else %}
-									<a href="#">{{category | capitalize}},</a>
-								{% endif %}
-							{% endfor %}
-							<time datetime="{{page.date}}">{{page.date | date: "%B %d, %Y"}}</time></h5>
-							{{content}}
+								<time datetime="{{page.date}}">{{page.date | date: "%B %d, %Y"}}</time>
+								<div>
+									{% for category in page.tags %}
+										{% if category == page.tags.last %}
+											<a href="#">{{category | capitalize}}</a>
+										{% else %}
+											<a href="#">{{category | capitalize}},</a>
+										{% endif %}
+									{% endfor %}
+								</div>
+							</h5>
+							<div class="two-col">
+								{{content}}
+							</div>
 						</article>
 
 					</div><!-- post-area -->
