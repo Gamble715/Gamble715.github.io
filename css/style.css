@@ -845,6 +845,7 @@ nav ul.sub-menu > li:last-child > a {
 .search.list-style .meta-post a {
     color: #ccc;
     font-weight: 400;
+    line-height: 1.8;
 }
 
 .blog .column.six h5,
