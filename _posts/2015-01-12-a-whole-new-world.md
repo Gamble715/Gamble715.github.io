@@ -11,7 +11,7 @@ tags: ["Life"]
 ---
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Everyone has an interpretation of life. A buhddist monk in Nepal who thinks life is a path to enlightenment or a counter-culture twentysomething in Europe who says life is a struggle against authority. We all have this concept of life in common, but the way it manifests within us varies from person to person; from experience to experience. Since this is my inaugural post I feel it necessary to get my outlook on life out of the way to set the stage for whatever may be written on these pages later on down the road.
+Everyone has an interpretation of life. A buhddist monk in Nepal who thinks life is a path to enlightenment or a counter-culture twentysomething in Europe who says life is a struggle against authority. We all have this concept of life in common, but the way it manifests within us varies from person to person; from experience to experience. Since this is my inaugural post I feel it necessary to get my outlook on life out of the way to set the stage for whatever may be written on these pages later on down the road.
 
 To me, life is an adventure.
 
