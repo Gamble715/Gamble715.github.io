@@ -7,7 +7,7 @@ categories: jekyll update
 image: "../../images/world.jpeg"
 permalink: "/blog/a-whole-new-world"
 shortUrl: "http://bit.ly/1xVMGAr"
-tags: ["Life"]
+tags: ["Life", "Philosophy"]
 ---
 
 

@@ -58,12 +58,10 @@
 $(document).ready(function(){
   $('#send').click(function(){
     $(this).val('Sending ...');
-    $('#success p').remove();
-    $.post('https://formkeep.com/f/dd2b6c0c1f02', $('#contact-form').serialize(), function(response) {
-      // $('#success').html(response);
+    $.post('https://formkeep.com/f/8321542488b7', $('#contact-form').serialize(), function(response) {
+      $('#success').html(response);
       $('#success').hide('slow');
-      $('#send').val('Send a Message');
-      $('#send').append('Your message has been sent!');
+      $('#send').val('Your message has been sent!');
     });
     return false;
   });
