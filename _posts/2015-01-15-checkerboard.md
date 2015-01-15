@@ -71,7 +71,7 @@ I remembered doing a two dimensional array problem a couple of days before and w
 So lets go through this function and see how it works, starting from the top:
 
 	if( size <= 0 ) {
-    return "";
+	  return "";
 	}
 
 This is a check to ensure that if 0 or a negative number is passed in as a parameter, the function will short cuircut and return an empty string. It is important that this is at the top of the function for performance reasons, otherwise the entire function would run and only at the end would it realize to return the empty string.
