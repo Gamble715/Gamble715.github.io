@@ -6,7 +6,7 @@ date:   2015-01-15
 categories: javaScript, exercises
 image: "../../images/checkers.jpg"
 permalink: "/blog/checkerboard"
-shortUrl: "http://bit.ly/1xVMGAr"
+shortUrl: "http://bit.ly/1Csnb7S"
 tags: ["JavaScript", "Exercises"]
 ---
 

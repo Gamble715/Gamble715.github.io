@@ -6,7 +6,7 @@ date:   2015-01-15
 categories: jekyll update
 image: "../../images/write.jpg"
 permalink: "/blog/whats-behind-the-curtains"
-shortUrl: "http://bit.ly/1xVMGAr"
+shortUrl: "http://bit.ly/1Csn4sM"
 tags: ["Jekyll", "Technology"]
 ---
 
