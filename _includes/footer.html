@@ -54,8 +54,13 @@
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="{{ "js/plugins.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "js/beetle.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "js/highlight.pack.js " | prepend: site.baseurl }}"></script>
 <script>
 $(document).ready(function(){
+  hljs.initHighlightingOnLoad();
+  $('span.code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
   $('#send').click(function(){
     $(this).val('Sending ...');
     $.post('https://formkeep.com/f/8321542488b7', $('#contact-form').serialize(), function(response) {

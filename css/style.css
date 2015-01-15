@@ -834,6 +834,10 @@ nav ul.sub-menu > li:last-child > a {
   line-height: .8;
 }
 
+.code {
+    display: inline !important;
+}
+
 .blog-image {
     height: 150px;
 }
