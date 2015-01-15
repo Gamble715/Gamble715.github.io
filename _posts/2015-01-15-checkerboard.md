@@ -11,7 +11,7 @@ tags: ["JavaScript", "Exercises"]
 ---
 
 
-*To keep my coding chops fresh I go to [Codewars](http://www.codewars.com/) and run through some exercises. I will post the more interesting ones here and go step by step over how I initially tried to tackle the problem, and what ended up to be the best solution.*
+*To keep my coding chops fresh I go to [Codewars](http://www.codewars.com/) and run through some exercises. I will post the more interesting ones here and go step by step over how I initially tried to tackle the problem, and what ended up being the best solution.*
 
 ## The Problem
 
