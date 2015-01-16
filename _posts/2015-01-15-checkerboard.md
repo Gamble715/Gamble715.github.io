@@ -2,8 +2,8 @@
 layout: post
 title:  "Checkerboard exercise"
 subtitle: "Generate a checkerboard given an integer."
-date:   2015-01-16
-categories: javaScript, exercises
+date:   2015-01-15
+categories: javascript, exercises
 image: "../../images/checkers.jpg"
 permalink: "/blog/checkerboard"
 shortUrl: "http://bit.ly/1Csnb7S"

@@ -2,7 +2,7 @@
 layout: post
 title:  "What's behind the Curtains"
 subtitle: "What you are looking at and how it was built."
-date:   2015-01-15
+date:   2015-01-14
 categories: jekyll update
 image: "../../images/write.jpg"
 permalink: "/blog/whats-behind-the-curtains"
