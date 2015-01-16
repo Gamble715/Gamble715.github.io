@@ -4,7 +4,7 @@ title:  "Luhn Algorithm"
 subtitle: "Check the validity of credit card numbers."
 date:   2015-01-16
 categories: javascript, exercises
-image: "../../images/checkers.jpg"
+image: "../../images/credit-cards.jpg"
 permalink: "/blog/luhn"
 shortUrl: "http://bit.ly/1Csnb7S"
 tags: ["JavaScript", "Exercises"]
