@@ -15,7 +15,7 @@ tags: ["JavaScript", "Exercises"]
 
 ## The Problem
 
-In javaScript, write a method checkerboard which takes an integer size and returns a checkerboard of dimensions size x size. There are two colored squares on the checkerboard. Red squares are represented by the string [r] and black squares are represented by the string [b]. You MUST use the newline character \n to insert a newline at the end of each row.
+In JavaScript, write a method checkerboard which takes an integer size and returns a checkerboard of dimensions size x size. There are two colored squares on the checkerboard. Red squares are represented by the string [r] and black squares are represented by the string [b]. You MUST use the newline character \n to insert a newline at the end of each row.
 
 - The top left corner should be a red square.
 - Each row should have alternating squares in the row.
