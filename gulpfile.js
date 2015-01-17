@@ -27,7 +27,7 @@ gulp.task('images', function(cb) {
 	        progressive: true,
 	        interlaced: true
 	    }))
-	    .pipe(gulp.dest('build/images'))
+	    .pipe(gulp.dest('images'))
 });
 
 gulp.task('watch', function () {
