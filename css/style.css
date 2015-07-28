@@ -13,13 +13,17 @@
     General Rules
 ----------------------------------------------------------------*/
 
+/*$flamingo: #EE6650;
+$coriander: #C6CCB2;
+$patina: #62978E;
+$green-smoke: #99B063;*/
 ::-moz-selection {
     background: #FD685B;
     color: #fff;
 }
 
 ::selection {
-    background: #FD685B;
+    background: #EE6650;
     color: #fff;
 }
 
@@ -66,7 +70,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #222;
+    color:  #fff;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.34;
     text-rendering: auto; /* Android browser */
@@ -547,14 +551,15 @@ nav ul.sub-menu > li:last-child > a {
 
 #intro::after {
   content: "";
-  background: url(../images/seamless_paper_texture.png);
+  background: url('http://3.bp.blogspot.com/-ANXRUBPV8-4/UAWv3lgez_I/AAAAAAAAAWI/v6N7YFZPgbc/s1600/DMDwed0004.jpg');
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: -1;
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #intro.preload .intro-item {
@@ -575,6 +580,10 @@ nav ul.sub-menu > li:last-child > a {
 .caption-mockup,
 .photocaption {
     z-index: 2;
+}
+
+.caption-mockup h1 {
+  font-size: 5em !important;
 }
 
 .caption,
@@ -2384,7 +2393,7 @@ input.button:active {
 
 .button.red,
 input.button.red {
-    background-color: rgba(253,104,91,1);
+    background-color: #EE6650;
 }
 
 .button.red:hover,

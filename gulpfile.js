@@ -5,16 +5,14 @@ var gulp = require('gulp'),
 
 gulp.task('css', function () {
 	gulp.src('css/*.css')
-	   .pipe(plugins.autoprefixer('last 2 version', 'ie 8', 'ie 9'))
+	    .pipe(plugins.autoprefixer('last 2 version', 'ie 8', 'ie 9'))
       .pipe(plugins.concat("style.css"))
       .pipe(plugins.minifyCss())
-	   .pipe(gulp.dest('build'));
+	    .pipe(gulp.dest('build'));
 });
 
 gulp.task('js', function () {
    return gulp.src('js/*.js')
-      .pipe(plugins.jshint())
-      .pipe(plugins.jshint.reporter('jshint-stylish'))
       .pipe(plugins.uglify())
       .pipe(plugins.concat('app.js'))
       .pipe(gulp.dest('build'));

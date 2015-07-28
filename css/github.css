@@ -1,0 +1,17 @@
+.grid-item {
+  height:150px !important;
+  width:150px;
+  cursor:pointer;
+}
+
+.grid-item img {
+  display:block;
+  width:150px;
+  height:150px;
+  border-radius: 5%;
+}
+
+section.wrap {
+  max-width: 925px;
+  margin: 0 auto;
+}

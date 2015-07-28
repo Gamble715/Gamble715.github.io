@@ -50,13 +50,15 @@
   </div><!-- row -->
 </footer>
 
-<script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="{{ "build/app.js" | prepend: site.baseurl }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.1/packery.pkgd.js"></script>
 <!-- <script src="{{ "js/beetle.js " | prepend: site.baseurl }}"></script>
 <script src="{{ "js/highlight.pack.js " | prepend: site.baseurl }}"></script> -->
+
 <script>
 $(document).ready(function(){
+
   hljs.initHighlightingOnLoad();
   $('span.code').each(function(i, block) {
     hljs.highlightBlock(block);
