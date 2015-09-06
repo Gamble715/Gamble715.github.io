@@ -69,8 +69,8 @@ body {
     line-height: 1.8;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color:  #fff;
+h1, h2, h3, h5, h6 {
+    /*color:  #fff;*/
     font-family: 'Montserrat', sans-serif;
     line-height: 1.34;
     text-rendering: auto; /* Android browser */
@@ -91,6 +91,7 @@ input:not([type]),
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="number"],
 input[type="url"],
 input[type="search"],
 input[type="tel"],
@@ -102,6 +103,10 @@ textarea.plain {
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.333em;
     color: #333;
+}
+
+.check {
+  margin-bottom: 1em;
 }
 
 textarea:focus,
@@ -393,7 +398,7 @@ only screen and (min-resolution: 144dpi) {
 
 header.transparent.light #brand a,
 header.transparent.light nav > ul > li > a {
-    color: #fff;
+    /*color: #99B063;*/
 }
 
 header.fixed-header.transparent.light #brand a,
@@ -408,7 +413,7 @@ header.fixed-header.transparent.light nav > ul > li:hover > a {
 
 nav > ul,
 nav > ul > li {
-    float: left;
+    float: right;
     clear: none;
 }
 
@@ -1609,12 +1614,12 @@ section.greyish {
     text-align: center;
 }
 
-.section-title h3 {
+.section-title h1 {
     display: inline-block;
     border-bottom: 2px solid rgba(0,0,0,0.1);
     text-transform: uppercase;
-    font-size: 0.889em;
-    line-height: 1.8;
+    color:  #99B063;
+    margin-top: 0
 }
 
 
@@ -3578,6 +3583,9 @@ footer .row-content.buffer {
     .search.list-style article figure {
         margin-bottom: 1em;
     }
+}
+#instafeed {
+  margin-bottom: 1em;
 }
 
 /*----------------------------------------------------------------

@@ -45,8 +45,40 @@ layout: default
   <div id="main">
     <section class="row section call-to-action">
       <div class="row-content buffer even">
-        <p>How can we contact you?</p>
-        <a class="button red" href="{{ site.data.routes.contact }}">Right Here!</a>
+        <p>RSVP</p>
+        <a class="button red" href="{{ site.data.routes.contact }}">Here!</a>
+      </div>
+    </section>
+
+    <section class="row section">
+      <div class="row-content buffer even clear-after">
+        <div class="column four">
+          <a href="{{ site.data.routes.portfolio}}">
+            <div class="small-icon red"><i class="icon icon-diamond"></i></div>
+          </a>
+          <div class="small-icon-text clear-after">
+            <h4>Schedule</h4>
+            <p class="text-xs">Coming Soon!</p>
+          </div>
+        </div>
+        <div class="column four">
+          <a href="{{ site.data.routes.resume}}">
+            <div class="small-icon red"><i class="icon icon-crown"></i></div>
+          </a>
+          <div class="small-icon-text clear-after">
+            <h4>Wedding Party</h4>
+            <p class="text-xs">Coming Soon</p>
+          </div>
+        </div>
+        <div class="column four last">
+          <a href="{{ site.data.routes.blog }}">
+            <div class="small-icon red"><i class="icon icon-megaphone"></i></div>
+          </a>
+          <div class="small-icon-text clear-after">
+            <h4>Announcements</h4>
+            <p class="text-xs">Coming Soon!</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -55,41 +87,10 @@ layout: default
     </section>
 
     <!-- <section class="row section">
-      <div class="row-content buffer even clear-after">
-        <div class="column four">
-          <a href="{{ site.data.routes.portfolio}}">
-            <div class="small-icon red"><i class="icon icon-diamond"></i></div>
-          </a>
-          <div class="small-icon-text clear-after">
-            <h4>Give me the DEETS!!</h4>
-            <p class="text-xs">Here ya Go</p>
-          </div>
-        </div>
-        <div class="column four">
-          <a href="{{ site.data.routes.resume}}">
-            <div class="small-icon red"><i class="icon icon-crown"></i></div>
-          </a>
-          <div class="small-icon-text clear-after">
-            <h4>Who is this shindig about?</h4>
-            <p class="text-xs">We come in Peace.</p>
-          </div>
-        </div>
-        <div class="column four last">
-          <a href="{{ site.data.routes.blog }}">
-            <div class="small-icon red"><i class="icon icon-megaphone"></i></div>
-          </a>
-          <div class="small-icon-text clear-after">
-            <h4>Random Thoughts</h4>
-            <p class="text-xs">Stuff we say</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <section class="row section">
       <div id='locale-map'>
         <iframe src="http://mapbuildr.com/frame/nps2um" frameborder="0" height="500" width="500"></iframe>
       </div>
-    </section>
+    </section> -->
     <!-- <section class="row section">
       <div class="row-content buffer even clear-after">
         <div class="column six push-six last-special">
@@ -202,12 +203,12 @@ layout: default
   </div><!-- id-main -->
 </main><!-- main -->
 <script type="text/javascript">
-  $(document).ready(function(){
+  $(document).ready(function () {
     $('.caption-mockup h1').arctext({radius: 300});
     {% raw %}
     var feed = new Instafeed({
       get: 'tagged',
-      tagName: 'sushiroll',
+      tagName: 'betonmcadam',
       sortBy: 'most-liked',
       limit: 12,
       resolution: 'low_resolution',
