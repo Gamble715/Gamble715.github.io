@@ -1,38 +1,31 @@
-<header role="banner" class="transparent light">
-  <div class="row">
-    <div class="nav-inner row-content buffer-left buffer-right even clear-after">
-      <div id="brand">
-        <h1 class="reset"><!--<img src="img/logo.png" alt="logo">--><a href="{{ site.data.routes.home }}">Wed Fest</a></h1>
-      </div><!-- brand -->
-      <a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
-      <nav>
-        <ul class="reset" role="navigation">
-          <li class="menu-item">
-            <a href="{{ site.data.routes.contact }}">RSVP</a>
-          </li>
-          <!-- <li class="menu-item">
-            <a href="{{ site.data.routes.portfolio }}">Portfolio</a>
-            <ul class="sub-menu">
-              {% for item in site.portfolio %}
-                <li><a href="{{ item.url }}">{{ item.project }}</a></li>
-              {% endfor %}
+<header id="header">
+  <section class="nav-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <a href="#home" class="nav-logo"><img src="img/logo_small.png" alt="" height="51" /></a>
+
+          <nav id="nav"><!-- BEGIN MAIN MENU -->
+            <ul>
+              <li><a href="#theband">The Band</a></li>
+              <li><a href="#concerts">Concerts</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#store">Store</a></li>
+              <li><a href="#contacts">Contact us</a></li>
             </ul>
-          </li>
-          <li class="menu-item">
-            <a href="{{site.data.routes.blog}}">Blog</a>
-            <ul class="sub-menu">
-              {% assign posts = site.posts | sort: 'date' %}
-              {% for post in posts reversed limit:5 %}
-                <li>
-                  <a href="{{ post.url }}">{{ post.title }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </li>
-          <li class="menu-item"><a href="{{ site.data.routes.resume }}">Resume</a></li>
-          <li class="menu-item"><a href="{{site.data.routes.contact}}">Contact</a></li> -->
-        </ul>
-      </nav>
-    </div><!-- row-content -->
-  </div><!-- row -->
+          </nav><!-- END MAIN MENU -->
+
+          <ul class="sn-icons"><!-- BEGIN SOCIAL ICONS -->
+            <li><a href=""><i class="icon-facebook-sign"></i></a></li>
+            <li><a href=""><i class="icon-twitter-sign"></i></a></li>
+            <li><a href=""><i class="icon-instagram"></i></a></li>
+            <li><a href=""><i class="icon-google-plus-sign"></i></a></li>
+            <li><a href=""><i class="icon-pinterest-sign"></i></a></li>
+            <li><a href=""><i class="icon-rss-sign"></i></a></li>
+          </ul><!-- END SOCIAL ICONS -->
+        </div>
+      </div>
+    </div>
+  </section>
 </header>
+<!-- END HEADER -->

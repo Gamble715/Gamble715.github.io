@@ -29,6 +29,11 @@ var Beat = {
 		$tis.initialized = true;
 		$tis.construct();
 		$tis.events();
+		$('#contact_subject').on('click', function (e) {
+			e.preventDefault();
+			console.log('kcehb');
+			// $('.btn-group').addClass('open');
+		});
 	},
 
 	construct: function() {
@@ -665,16 +670,6 @@ var Beat = {
 				cursorborder:"0px solid #000",
 				railpadding:{top:0,right:3,left:0,bottom:0},
 				zindex:"999"
-			});
-
-			$(".gallery-scroller").niceScroll({
-				cursorcolor:'#3f9f97',
-				cursorwidth:'20px',
-				background:'#1F2326',
-				cursorborder:'0px solid #1F2326',
-				zindex:'999',
-				autohidemode:false,
-				enablemousewheel:false
 			});
 		});
 

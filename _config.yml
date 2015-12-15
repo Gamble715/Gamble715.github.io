@@ -9,8 +9,6 @@ baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://catherineandgamble.com" # the base hostname & protocol for your site
 twitter_username: MisplacedYankee
 github_username:  Gamble715
-paginate: 5
-paginate_path: "blog/page:num/"
 
 # Build settings
 markdown: kramdown
@@ -19,4 +17,6 @@ collections:
   portfolio:
     output: true
   employment:
+    output: true
+  listings:
     output: true
