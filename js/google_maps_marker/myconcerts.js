@@ -1,5 +1,16 @@
 var myConcerts = [
 	{
+		buyTicketURL: "http://www.wiselythemes.com/index.php?theme=beat",
+		day: 29,
+		hour: 22,
+		latitude: 40.752117,
+		location: "Chapell Lodge and Vinyard - 1215 Chappel Lane, Austin, TX 78748",
+		longitude: -73.993435,
+		minute: 30,
+		month: 5,
+		year: 2016
+	},
+	{
 		year:2015,
 		month:01,
 		day:20,
