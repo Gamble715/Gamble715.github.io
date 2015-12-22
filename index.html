@@ -7,10 +7,17 @@ permalink: /
 		<div class="row">
 			<div class="col-sm-12">
 				<a href="#home" id="logo" class="nav-logo">
-          <h1 class="wedfest">Wedfest</h1>
+          <h1 class="wedfest">Catherine & Gamble</h1>
           <!-- <img src="img/logo.png" alt="" width="379" height="205" /> -->
         </a>
 
+				<div class="ccounter">
+					<h2 style="color: white;">are getting married in</h2>
+					<div class="counter"><input class="knob days" data-readOnly="true" data-width="85" data-height="85" data-displayPrevious=true data-fgColor="#fff" data-skin="beat" data-thickness=".15" data-min="0" data-max="365" value="75" /><span>DAYS</span></div>
+					<div class="counter"><input class="knob hour" data-readOnly="true" data-width="85" data-height="85" data-min="0" data-max="24" data-displayPrevious=true data-fgColor="#fff" data-skin="beat" data-thickness=".15" value="75" /><span>HOURS</span></div>
+					<div class="counter"><input class="knob minute" data-readOnly="true" data-width="85" data-height="85" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#fff" data-skin="beat" data-thickness=".15" value="75" /><span>MIN.</span></div>
+					<div class="counter"><input class="knob second" data-readOnly="true" data-width="85" data-height="85" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#fff" data-skin="beat" data-thickness=".15" value="75" /><span>SEC.</span></div>
+				</div>
 				<div id="social-stream">
 					<!-- <ul id="social-stream-items">
 						<li>
@@ -192,8 +199,31 @@ i												"txt":"Example of Vimeo embed video",
 </section>
 <!-- END HOME SECTION -->
 
+<!-- BEGIN CONTACTS SECTION -->
+<section id="rsvp" class="bg-color2">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1 class="section-title center">RSVP</h1>
+
+				<div id="form-wrap" class="col-sm-5 center">
+					<form id="form-contact" class="bg-color1" accept-charset="UTF-8" action="https://formkeep.com/f/8321542488b7" method="POST">
+						<input type="hidden" name="utf8" value="✓">
+						<input type="text" placeholder="Name" name="name" id="contact_name" />
+						<input type="email" placeholder="Email" name="email" id="contact_email" />
+						<input type="text" placeholder="Number Attending" name="partySize" id="contact_subject" />
+						<div class="btn-group">
+							<button type="submit" class="btn btn-dark btn-icon"><i class="icon-envelope"></i><span>Send</span></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!-- Begin News/Blog Page Overlay -->
-<div class="page-overlay" id="news-overlay">
+<!-- <div class="page-overlay" id="news-overlay">
 	<i class="icon-remove-circle close-overlay"></i>
 	<div class="container">
 		<div class="row">
@@ -405,7 +435,7 @@ i												"txt":"Example of Vimeo embed video",
 	</div>
 	<div class="loading"></div>
 	<div class="progress"></div>
-</div>
+</div> -->
 <!-- End News/Blog Page Overlay -->
 
 
@@ -501,7 +531,7 @@ i												"txt":"Example of Vimeo embed video",
 END THE BAND SECTION -->
 
 <!-- Begin About Band Page Overlay -->
-<div class="page-overlay" id="theband-overlay">
+<!-- <div class="page-overlay" id="theband-overlay">
 	<i class="icon-remove-circle close-overlay"></i>
 	<div class="container">
 		<div class="row">
@@ -581,53 +611,42 @@ END THE BAND SECTION -->
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 <!-- End About Band Page Overlay -->
-
-<!-- BEGIN CONCERTS SECTION -->
-<section id="concerts">
+<!-- BEGIN STORE SECTION -->
+<section id="lodging">
 	<div class="container">
 		<div class="row">
-			<div id="concerts-info" class="col-sm-12">
-				<h1 class="section-title center">Dates and Locales</h1>
-
-				<div id="counter-info">
-					<div class="featured">
-						<div class="icon"><i class="icon-calendar"></i></div>
-						<h3>Date of Wedding</h3>
-					</div>
-
-					<div class="ccounter">
-						<div class="counter"><input class="knob days" data-readOnly="true" data-width="85" data-height="85" data-displayPrevious=true data-fgColor="#3f9f97" data-skin="beat" data-thickness=".15" data-min="0" data-max="365" value="75" /><span>DAYS</span></div>
-						<div class="counter"><input class="knob hour" data-readOnly="true" data-width="85" data-height="85" data-min="0" data-max="24" data-displayPrevious=true data-fgColor="#3f9f97" data-skin="beat" data-thickness=".15" value="75" /><span>HOURS</span></div>
-						<div class="counter"><input class="knob minute" data-readOnly="true" data-width="85" data-height="85" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#3f9f97" data-skin="beat" data-thickness=".15" value="75" /><span>MIN.</span></div>
-						<div class="counter"><input class="knob second" data-readOnly="true" data-width="85" data-height="85" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#3f9f97" data-skin="beat" data-thickness=".15" value="75" /><span>SEC.</span></div>
-					</div>
-
-					<div class="date col-sm-12"></div> <!-- This div will be automatic populated with the upcoming concert date -->
-					<div class="location col-sm-12"></div> <!-- This div will be automatic populated with the upcoming concert address -->
-				</div>
-
-				<!-- <div class="buttons-area col-sm-12">
-					<a href="#" class="btn btn-default btn-icon" id="buyTicketsBtn"><i class="icon-tags"></i><span>Buy Tickets !</span></a>
-					<a href="" id="seeLocation" class="btn btn-dark btn-icon"><i class="icon-map-marker"></i><span>See Location</span></a><br/>
-					<button id="complete-list-btn" class="btn btn-dark2">View the Complete List of Concerts</button>
-				</div> -->
-
-				<div id="complete-list">
-					<i class="icon-remove-circle close-complete-list"></i>
-					<div id="list"></div><!-- This div will be automatic populated with the complete list of concerts -->
-				</div>
+			<div class="col-sm-12">
+				<h1 class="section-title center">Places to Stay</h1>
 			</div>
 		</div>
 	</div>
 
+	<div class="flexslider">
+		<ul class="slides">
+			{% for listing in site.data.listings %}
+				<li>
+					<img src="{{ listing.image }}" alt="" />
+					<h3 class="color">{{ listing.name }}</h3>
+					<h2>{{ listing.price | default: '?' }}/night</h2>
+					<h3 class="color">{{ listing.specs }}</h3>
+					<a href="{{ listing.url }}" class="btn btn-default btn-icon" style="float: none;"><i class="icon-home"></i><span>Check availability</span></a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+<!-- END STORE SECTION -->
+
+<!-- BEGIN CONCERTS SECTION -->
+<section id="concerts">
 	<div id="map_canvas"></div>
 </section>
 <!-- END CONCERTS SECTION -->
 
 <!-- BEGIN GALLERY SECTION -->
-<section id="gallery">
+<!-- <section id="gallery">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -636,7 +655,7 @@ END THE BAND SECTION -->
 		</div>
 	</div>
 	<div class="gallery-scroller">
-		<!-- <ul>
+	  <ul>
 			<li>
 				<a href="http://placehold.it/700x490" data-gal="prettyPhoto[gallery]" title="Lorem ipsum"><span></span><i class="hover-icon"></i></a>
 				<img src="http://placehold.it/322x322" alt="" />
@@ -704,72 +723,7 @@ END THE BAND SECTION -->
 				<img src="http://placehold.it/322x322" alt="" />
 			</li>
 		</ul> -->
-		<ul>
-		{% for listing in site.airbnb %}
-		  <li>
-		    <a href="https://github.com/{{ member.github }}">
-		      {{ listing.name }}
-		    </a>
-		  </li>
-		{% endfor %}
-		</ul>
-	</div>
-</section>
 <!-- END GALLERY SECTION -->
 
-<!-- BEGIN STORE SECTION -->
-<section id="store">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1 class="section-title center">Places to Stay</h1>
-			</div>
-		</div>
-	</div>
 
-	<div class="flexslider">
-		<ul class="slides">
-			{% for listing in site.data.listings %}
-				<li>
-					<img src="{{ listing.image }}" alt="" />
-					<h3 class="color">{{ listing.name }}</h3>
-					<h2>{{ listing.price | default: '?' }}/night</h2>
-					<h3 class="color">{{ listing.specs }}</h3>
-					<a href="{{ listing.url }}" class="btn btn-default btn-icon" style="float: none;"><i class="icon-home"></i><span>Check availability</span></a>
-				</li>
-			{% endfor %}
-		</ul>
-	</div>
-</section>
-<!-- END STORE SECTION -->
-
-<!-- BEGIN CONTACTS SECTION -->
-<section id="contacts" class="bg-color2">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1 class="section-title center">Contact us</h1>
-
-				<div id="form-wrap" class="col-sm-5 center">
-					<form id="form-contact" class="bg-color1" accept-charset="UTF-8" action="https://formkeep.com/f/a5e7f0eb5e4f" method="POST">
-						<input type="text" placeholder="Name" name="name" id="contact_name" />
-						<input type="email" placeholder="Email" name="email" id="contact_email" />
-						<input type="text" placeholder="Number Attending" name="partySize" id="contact_subject" />
-						<div class="btn-group">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Action <span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu" >
-								<li style="display: inline;">
-									<input type="text" placeholder="Number Vegetarian" name="partySize" class="dropdown-menu" style="position: inherit;" id="contact_subject" />
-								</li>
-							</ul>
-						</div>
-						<a href="" id="contact_send" class="btn btn-dark btn-icon"><i class="icon-envelope"></i><span>Send</span></a>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 <!-- END CONTACTS SECTION -->

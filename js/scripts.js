@@ -174,11 +174,7 @@ var Beat = {
 		});
 
 		$('#logo').waypoint(function(dir) {
-				if(dir === "down"){
-					$(".nav-section .nav-logo").css({visibility: 'visible', opacity:1});
-				} else {
-					$(".nav-section .nav-logo").css({visibility: 'hidden', opacity:0});
-				}
+				$(".nav-section .nav-logo").css({visibility: 'visible', opacity:1});
 		}, { offset: -65 });
 
 		$("section").waypoint(function(direction) {
