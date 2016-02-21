@@ -1738,8 +1738,11 @@ fieldset[disabled] .btn-dark2.active {
 /* #Concerts
 ================================================== */
 #concerts{
-	display: none;
 	padding-top:0px;
+}
+
+.mapscroll-wrap {
+	width: 100%;
 }
 
 #map_canvas{
